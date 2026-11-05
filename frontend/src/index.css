@@ -1,0 +1,54 @@
+/* ===== TELJES RESET ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== HTML & BODY ===== */
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;      /* horizontális scroll soha */
+  overflow-y: auto;        /* vertikális scroll, ha kell */
+  background: #f8f9fa;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== ROOT és wrapper javítás ===== */
+#root,
+#root > div {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f9fa;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* ===== Linkek és inputok ===== */
+a {
+  color: #2e7d67;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #58b499;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  outline: none;
+  border: none;
+}
+

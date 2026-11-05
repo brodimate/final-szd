@@ -1,0 +1,103 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+/* ====== KÁRTYA ====== */
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 32px 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.register-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #2e7d67;
+  margin-bottom: 24px;
+}
+
+/* ====== FORM ====== */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+label {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ====== ÜZENETEK ====== */
+.error-msg {
+  color: #721c24;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.status-msg {
+  color: #155724;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* ====== LINK ====== */
+.register-links {
+  margin-top: 28px;               /* egységes a login-oldallal */
+  font-size: 15px;
+  text-align: center;             /* középre helyezve */
+}
+
+.register-links p {
+  margin: 8px 0;                  /* egységes a login-oldallal */
+}
+
+.register-links a {
+  color: #2e7d67;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.register-links a:hover {
+  color: #58b499;
+  border-bottom: 2px solid #58b499;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .register-card {
+    width: 92%;
+    padding: 20px 16px;
+    border-radius: 8px;
+  }
+  .register-title {
+    font-size: 22px;
+  }
+  .register-container {
+  margin-top: 0px;
+  }
+}
